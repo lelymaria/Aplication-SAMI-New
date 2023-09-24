@@ -99,7 +99,7 @@
                                     <td>{{ $auditee->name }}</td>
                                     <td>{{ $auditee->nip }}</td>
                                     <td>{{ $auditee->email }}</td>
-                                    <td><strong>{{ $auditee->userHasLevel->level->name }}</strong></td>
+                                    <td><strong>{{ $auditee->userHasLevelNotActive->level->name }}</strong></td>
                                     <td>
                                         @if ($auditee->akunAuditee->prodi)
                                             {{ $auditee->akunAuditee->prodi->nama_prodi }}

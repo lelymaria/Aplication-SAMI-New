@@ -84,7 +84,7 @@
                         <div class="profile-details">
                             <div class="profile-name px-3 pt-2">
                                 <h4 class="text-primary mb-0">{{ $update_akun_auditor->akunAuditor?->nama }}</h4>
-                                <p>{{ $update_akun_auditor->userHasLevel->level->name }}</p>
+                                <p>{{ $update_akun_auditor->userHasLevelNotActive->level->name }}</p>
                             </div>
                             <div class="profile-email px-2 pt-2">
                                 <h4 class="text-muted mb-0">{{ $update_akun_auditor->akunAuditor?->email }}</h4>

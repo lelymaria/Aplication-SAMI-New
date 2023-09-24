@@ -119,7 +119,7 @@
                                                                 <td>{{ $lead_auditor->name }}</td>
                                                                 <td>{{ $lead_auditor->nip }}</td>
                                                                 <td>{{ $lead_auditor->email }}</td>
-                                                                <td><strong>{{ $lead_auditor->userHasLevel->level->name }}</strong>
+                                                                <td><strong>{{ $lead_auditor->userHasLevelNotActive->level->name }}</strong>
                                                                 </td>
                                                                 <td>
                                                                     @if ($lead_auditor->akunAuditor?->prodi)

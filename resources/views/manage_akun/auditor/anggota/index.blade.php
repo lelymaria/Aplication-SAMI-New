@@ -118,7 +118,7 @@
                                                                 <td>{{ $anggota_auditor->name }}</td>
                                                                 <td>{{ $anggota_auditor->nip }}</td>
                                                                 <td>{{ $anggota_auditor->email }}</td>
-                                                                <td><strong>{{ $anggota_auditor->userHasLevel->level->name }}</strong>
+                                                                <td><strong>{{ $anggota_auditor->userHasLevelNotActive->level->name }}</strong>
                                                                 </td>
                                                                 <td>
                                                                     @if ($anggota_auditor->akunAuditor?->prodi)

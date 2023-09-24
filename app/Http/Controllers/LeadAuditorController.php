@@ -19,7 +19,7 @@ class LeadAuditorController extends Controller
     {
         $level = Level::whereName(Level::LEAD_AUDITOR)->first();
         $data = [
-            'akun_auditor' => User::whereHas('userHasLevel', function ($query) use ($level) {
+            'akun_auditor' => User::whereHas('userHasLevelNotActive', function ($query) use ($level) {
                 $query->whereLevelId($level->id);
             })->latest()->paginate(10),
             'dataProdi' => ProgramStudi::all(),
